@@ -1,0 +1,37 @@
+{% extends "sportsbetting/base.njk" %}
+
+{% block body %}
+<div class="row main-container">
+            
+    <header class="row"> 
+        <div class="col-md-12">
+            <h1 class="main-heading">{{ user_obj.username }}</h1>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="image-container">
+                <img src="/sportsbetting/images/pic.png" id="pic">
+            </div>
+        </div>
+    </div>
+
+    <div class="row profile-statistics">
+        <div class="col-md-12">
+            <ul>
+                <li>Points: {{ user_obj.points }}</li>
+                <li>Wins/Losses: {{ user_obj.wins }}/ {{ user_obj.losses }}</li>
+                <li>Wining Percentage: {{ winning_percentage }} </li>
+            </ul>    
+        </div>
+    </div>
+
+</div>
+
+<footer class="row footer">
+    <div class="col-md-12"> 
+        <p>Here is a footer</p>
+    </div>
+</footer>
+{% endblock %}

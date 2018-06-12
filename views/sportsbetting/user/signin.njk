@@ -1,0 +1,35 @@
+{% extends "sportsbetting/base.njk" %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <h3>Sign In</h3>
+    </div>
+</div>
+
+
+<div class="row form-row">
+    <div class="col-md-12 col-sm-12">
+
+        <form method="post" action="/signin">
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            <div class="form-group"> 
+                <button type="submit" class="btn btn-default">Sign In</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
